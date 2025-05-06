@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# 📊 Table Visualization App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a responsive, interactive React-based dashboard that allows users to view, filter, sort, and analyze tabular data with integrated chart visualizations.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### ✅ Data Table
+- **Complex Filtering** using dynamic queries (`region:North sales>5000 isActive:true`)
+- **Column-wise Sorting** via inline sort buttons
+- **Pagination** with user-defined rows per page (including custom integer input)
+- **CSV Download** of currently filtered and paginated data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Chart Visualizations
+- **Bar Chart** for top sales
+- **Line Chart** for transactions
+- **Pie Chart** for users by region
+- Real-time updates based on filtered data
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 💄 UI/UX
+- **Bootstrap** styling for clean, responsive layout
+- Query filter, row count input, and CSV download are aligned inline for intuitive use
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Tech Stack
 
-### `npm run build`
+- **React** (Functional Components with Hooks)
+- **Bootstrap** (Layout and styling)
+- **Recharts** (Charts and graphs)
+- **JavaScript** (Core logic for filtering, sorting, pagination)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧠 Implementation Notes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Dynamic Query Parser**: The search box supports structured filters like `sales>1000`, `region:West`, or `isActive:true`.
+- **Sorting**: Triggered per column using buttons beside headers.
+- **Pagination**: Manual page selection with custom row count input, all handled in memory.
+- **Data Generation**: Mock data is generated dynamically to simulate large dataset behavior.
+- **CSV Export**: Dynamically creates downloadable CSV of the filtered table view.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/DhrutikPatel/db-dasher
+   cd db-dasher
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Run the app:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔗 Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I have deployed this app on:
+- [Render](https://render.com/)
