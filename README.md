@@ -66,4 +66,4 @@ This project is a responsive, interactive React-based dashboard that allows user
 ## 🔗 Deployment
 
 I have deployed this app on:
-- [Render](https://render.com/)
+- [Render](https://db-dasher.onrender.com/)
